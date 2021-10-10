@@ -6,17 +6,17 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.4.1</version>
+    <version>2.5.5</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
   <groupId>com.example</groupId>
   <artifactId>confluentdemo</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0</version>
   <name>confluentdemo</name>
   <description>Demo project for Spring Boot</description>
 
   <properties>
-    <java.version>11</java.version>
+    <java.version>17</java.version>
   </properties>
 
   <dependencies>
@@ -38,23 +38,23 @@
     <dependency>
       <groupId>org.springframework.kafka</groupId>
       <artifactId>spring-kafka</artifactId>
-      <version>2.6.4</version>
+      <version>2.7.7</version>
     </dependency>
 
     <dependency>
       <groupId>io.confluent</groupId>
       <artifactId>kafka-schema-registry-client</artifactId>
-      <version>5.3.0</version>
+      <version>6.2.1</version>
     </dependency>
     <dependency>
       <groupId>io.confluent</groupId>
       <artifactId>kafka-avro-serializer</artifactId>
-      <version>5.2.1</version>
+      <version>6.2.1</version>
     </dependency>
     <dependency>
       <groupId>io.confluent</groupId>
       <artifactId>kafka-streams-avro-serde</artifactId>
-      <version>5.3.0</version>
+      <version>6.2.1</version>
       <exclusions>
         <exclusion>
           <groupId>org.slf4j</groupId>
@@ -65,7 +65,7 @@
     <dependency>
       <groupId>org.apache.avro</groupId>
       <artifactId>avro</artifactId>
-      <version>1.10.1</version>
+      <version>1.10.2</version>
     </dependency>
 
     <dependency>
@@ -76,12 +76,12 @@
     <dependency>
       <groupId>org.apache.avro</groupId>
       <artifactId>avro-compiler</artifactId>
-      <version>1.8.2</version>
+      <version>1.10.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.avro</groupId>
       <artifactId>avro-maven-plugin</artifactId>
-      <version>1.8.2</version>
+      <version>1.10.2</version>
     </dependency>
 
     <dependency>
@@ -106,7 +106,7 @@
       <plugin>
         <groupId>org.apache.avro</groupId>
         <artifactId>avro-maven-plugin</artifactId>
-        <version>1.8.2</version>
+        <version>1.10.2</version>
         <executions>
           <execution>
             <phase>generate-sources</phase>
